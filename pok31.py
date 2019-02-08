@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
@@ -68,6 +69,7 @@ question_num=input("1-What is prior decision?\n2-what is optimal?\n3-Explaine ab
 print('question_num:',question_num,'\n')
 #-----------------------------------------------------------------------
 while(question_num!='e'):
+    os.system("clear")
     if(question_num=='1'):
       prior_decision()
       print("**************************************************************************************")
